@@ -1,0 +1,6 @@
+{
+	"apiEndpoint": "https://nuxt-iim.prismic.io/api/v2",
+	"libraries": [
+		"@/slices"
+	]
+}
