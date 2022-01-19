@@ -10,11 +10,13 @@
     "slicemachine": "start-slicemachine"
   },
   "dependencies": {
+    "@material/top-app-bar": "^13.0.0",
     "@nuxtjs/prismic": "^1.4.0",
     "core-js": "^3.19.3",
     "nuxt": "^2.15.8",
     "nuxt-sm": "^0.0.9",
     "vue": "^2.6.14",
+    "vue-material": "^1.0.0-beta-7",
     "vue-server-renderer": "^2.6.14",
     "vue-slicezone": "^0.1.0",
     "vue-template-compiler": "^2.6.14",
