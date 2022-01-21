@@ -19,6 +19,12 @@ Nous avons eu des blocaques sur le transfert de variable d'un fichier Vue à un 
 #### Intégration de Material Kit Design
 L'objectif était d'avoir recours à l'UI kit des consignes. Son intégration est presque complète (le footer en est l'exception).
 #### Documentation NuxtJS/Prismic
-Le code présenté sur la page de documentation n'est pas infaillible. Ce n'est pas évident lorsque nous souhaitions expérimenter dans un premier temps. 
+Le code présenté sur la page de documentation n'est pas infaillible. Ce n'est pas évident lorsque nous souhaitions expérimenter dans un premier temps.
+
+### Liens utiles
+
+Prismic : https://nuxt-iim.prismic.io
+Id : lucas.schrever@gmail.com
+Mdp : headlesscms
 
 
