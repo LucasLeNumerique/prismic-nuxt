@@ -81,8 +81,10 @@ export default {
         text-align: center;
         position: relative;
         margin-top: 20px;
+        border-bottom: solid;
+        border-bottom-color: #E19F3B;
     }
-    .list-detail:before {
+    /* .list-detail:before {
         content : "";
         position: absolute;
         margin-left: auto;
@@ -90,10 +92,8 @@ export default {
         left    : 0;
         bottom  : 0;
         height  : 1px;
-        width   : 20%;  /* or 100px */
-        border-bottom: solid;
-        border-bottom-color: #E19F3B;
-    }
+        width   : 20%;  
+    } */
     .list-detail > .list {
         display: inline-block;
     }
