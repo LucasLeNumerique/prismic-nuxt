@@ -23,7 +23,10 @@
             </md-card-area>
 
             <md-card-actions md-alignment="right">
-              <md-button>Learn more</md-button>
+              <a v-bind:href="'./article/' + item.uid">
+                <md-button>Learn more</md-button>
+              </a>
+
             </md-card-actions>
           </md-card>
         </li>
@@ -41,8 +44,8 @@ export default {
 
   async asyncData({ $prismic, error }) {
     const document = await $prismic.api.query($prismic.predicates.at('document.type','article'))
-    // console.log(document.results)
 
+    // console.log(document.results)
     // document.results.forEach(item => console.log(item.data))
 
     if (document) {

@@ -25,6 +25,7 @@ export default {
   async asyncData({ $prismic, params, error }) {
     const document = await $prismic.api.getByUID('article', params.uid)
     console.log(document.data.headline2.map(item => item.text).join(''))
+    // console.log(document)
     if (document) {
       return { document }
     } else {
