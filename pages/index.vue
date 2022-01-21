@@ -26,8 +26,8 @@
         
       <md-app-content>
         <home-page :data="home_data" v-if="page === 'home'"/>
-        <article-page v-if="page === 'article'"/>
-        <contact-page v-if="page === 'contact'"/>
+        <article-page :document="article_data" v-if="page === 'article'"/>
+        <contact-page :data="contact_data" v-if="page === 'contact'"/>
       </md-app-content>
     </md-app>
   </div>
@@ -58,12 +58,16 @@ export default {
     async asyncData({ $prismic, params, error }) {
       let home = await $prismic.api.getSingle('homepage')
       let menu = await $prismic.api.getSingle('menu')
-      console.log(JSON.parse(JSON.stringify(home.data['background-image'])))
+      let contact = await $prismic.api.getSingle('contact')
+      let document = await $prismic.api.query($prismic.predicates.at('document.type','article'))
+      console.log(JSON.parse(JSON.stringify(contact.data.headline2[0].type))) 
       if (home) {
         return {
           page: 'home',
           logo: menu.data.logo,
-          home_data: home.data
+          home_data: home.data,
+          article_data: document,
+          contact_data: contact
         } 
       } else {
         error({ statusCode: 404, message: 'Page not found' })
