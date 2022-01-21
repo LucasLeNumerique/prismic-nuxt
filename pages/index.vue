@@ -111,7 +111,7 @@ export default {
           logo: menu.data.logo,
           home_data: home.data,
           article_data: document,
-          contact_data: contact,
+          contact_data: contact.data,
           footer_data: footer.data,
         }
       } else {
