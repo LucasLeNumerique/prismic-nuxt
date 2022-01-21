@@ -35,7 +35,7 @@
             </md-card-media-cover>
             </md-card>
         </div>
-        <div class="build" v-if="data['credit'][0].type === 'paragraph'"> {{data['credit'][0].type.text}} </div>
+        <div class="build" v-if="data.credit[0].type === 'paragraph'"> {{data.credit[0].type.text}} </div>
     </div>
 </template>
 
